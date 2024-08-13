@@ -36,7 +36,7 @@ function App() {
     <main className=" text-center space-x-3 mt-10 items-center flex flex-col">
        <input className=" border bg-slate-400 border-slate-600" type="file" onChange={(e) => setImageUpload(e.target.files[0])} />
        <button onClick={handleUploadImage} className=" py-1 px-6 border border-slate-600 rounded-md">upload</button>
-       <div className=" w-[50%] space-y-6 mt-10">
+       <div className=" w-[50%] space-y-6 mt-20">
           {imageList.map((url, index) => (
             <div className="  border-red-600 border" key={index}>
                 <img src={url} />
